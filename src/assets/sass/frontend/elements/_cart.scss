@@ -1,0 +1,33 @@
+// cart
+
+.cart-tab {
+	border: 0;
+	margin-bottom: 2rem;
+	.nav-item {
+		padding: 0 1.5rem;
+		.nav-link {
+			font-size: 18px;
+			color: #222;
+			border: 0;
+		    padding: 0;
+		    transition: all 0.3s ease-in-out;
+			&.active {
+				border-bottom: 1px solid #222;
+			}
+			&:hover {
+				border-bottom: 1px solid #222;
+			}
+		}
+	}
+}
+.cart-table {
+	.products-img {
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+	}
+	.products-title {}
+	.products-quantiy {}
+	.products-price {}
+	.products-remove {}
+}

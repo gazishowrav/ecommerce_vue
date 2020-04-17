@@ -1,0 +1,93 @@
+// slider
+
+.slider {
+    height: 100vh;
+    .carousel-item {
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            bottom: 40%;
+            text-align: center;
+            .carousel-title {
+                font-size: 4rem;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                visibility: hidden;
+                transform: scale(0);
+                transition: transform 1s ease-in-out;
+            }
+            .carousel-subtitle {
+                font-size: 1rem;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                visibility: hidden;
+                transform: translate(-100px, 0);
+                transition: transform 2s ease-in-out;
+            }
+            .carousel-des {
+                font-size: 1.2rem;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                visibility: hidden;
+                transform: translate(-100px, 0);
+                transition: transform 3s ease-in-out;
+            }
+        }
+        &.active {
+            .carousel-caption {
+                .carousel-title {
+                    visibility: visible;
+                    transform: scale(1);
+                }
+                .carousel-subtitle {
+                    visibility: visible;
+                    transform: translate(0px, 0);
+                }
+                .carousel-des {
+                    visibility: visible;
+                    transform: translate(0px, 0);
+                }
+            }
+        }
+    }
+    .carousel-control-prev {
+        visibility: hidden;
+        transition: all 0.6s ease-in-out;
+        span {
+            font-size: 20px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    }
+    .carousel-control-next {
+        visibility: hidden;
+        transition: all 0.6s ease-in-out;
+        span {
+            font-size: 20px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    }
+    &:hover {
+        .carousel-control-prev {
+            visibility: visible;
+        }
+        .carousel-control-next {
+            visibility: visible;
+        }
+    }
+}
+
+// slider caption animation

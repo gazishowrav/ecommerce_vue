@@ -1,0 +1,78 @@
+// future card
+
+.future-card {
+	.future-box {
+		overflow: hidden;
+		width: 100%;
+		display: block;
+		img {
+			transition: 1s;
+			display: block;
+			width: 100%;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+	    text-align: center;
+	    transform: translate(-50%,-50%);
+	    .banner-desc {
+	    	font-size: 8px;
+	    	font-weight: 500;
+    	    display: block;
+    	    margin-bottom: 20px;
+	    	color: #fff;
+	    }
+	    .banner-text {
+			font-size: 4em;
+		    line-height: 64px;
+		    font-family: $font-family-amaticsc;
+		    font-weight: 700;
+		    font-style: normal;
+		    color: #fff;
+	        margin-bottom: 10px;
+	    }
+	    .banner-button {
+	    	position: relative;
+	    	color: #fff;
+	    	width: 80px;
+	    	margin: 0 auto;
+	    	&::after {
+	    		content: "";
+	    		position: absolute;
+	    		left: 0;
+	    		bottom: 0;
+	    		height: 2px;
+	    		width: 80px;
+	    		background: #fff;
+	    		margin-bottom: -5px;
+	    	}
+	    }
+	}
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+	.future-card {
+		.banner-content {
+		    .banner-text {
+				font-size: 2.5em;
+			    line-height: 34px;
+			    font-family: $font-family-amaticsc;
+			    font-weight: 700;
+			    font-style: normal;
+			    color: #fff;
+		        margin-bottom: 10px;
+		    }
+		}
+	}
+}
