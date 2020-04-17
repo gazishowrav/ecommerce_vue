@@ -167,3 +167,21 @@ main {
         }
     }
 }
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .cart-modal {
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    padding: 0rem;
+                    .modal-body {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

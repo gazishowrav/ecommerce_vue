@@ -69,7 +69,7 @@
                                     <span class="mdi mdi-wallet-giftcard"></span>
                                     <sup class="badge badge-pill badge-dark ml-n2">Wallet</sup>
                                 </a>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                <a href="#" data-toggle="modal" data-target="#cartModal" class="d-flex align-items-center justify-content-center">
                                     <span class="mdi mdi-cart-outline"></span>
                                     <sup class="badge badge-pill badge-dark ml-n2">0</sup>
                                 </a>
