@@ -1,16 +1,47 @@
 {
   "name": "sober",
-  "version": "1.0.0",
-  "description": "sober",
-  "main": "babel.config.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.9.0",
+    "core-js": "^3.6.4",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.11",
+    "vue-owl-carousel": "^2.0.3",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
   "keywords": [
     "sober"
   ],
   "author": "sober",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gazishowrav/ecommerce_vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gazishowrav/ecommerce_vue/issues"
+  },
+  "homepage": "https://github.com/gazishowrav/ecommerce_vue#readme"
 }

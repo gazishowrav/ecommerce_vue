@@ -29810,33 +29810,11 @@ main {
 .font-amaticsc {
   font-family: "Amatic SC"; }
 
-.search-modal .modal {
-  padding: 0 !important; }
-  .search-modal .modal .modal-dialog {
-    max-width: 100%;
-    margin: 0; }
-    .search-modal .modal .modal-dialog .modal-content {
-      height: 100%;
-      min-height: 100vh;
-      border: 0;
-      border-radius: 0;
-      padding: 3rem; }
-      .search-modal .modal .modal-dialog .modal-content .modal-body form {
-        width: 80%;
-        margin: 0 auto;
-        border-bottom: 2px solid #e4e6eb;
-        transition: all 0.3s ease; }
-        .search-modal .modal .modal-dialog .modal-content .modal-body form button {
-          font-size: 20px;
-          padding: 10px 10px;
-          border: 0;
-          background: transparent; }
-        .search-modal .modal .modal-dialog .modal-content .modal-body form input {
-          width: 100%;
-          padding: 10px 20px;
-          border: 0; }
-        .search-modal .modal .modal-dialog .modal-content .modal-body form:hover {
-          border-bottom: 2px solid #e4e6eb; }
+.products-modal input {
+  border: 1px solid #222;
+  padding: 0.5rem;
+  max-width: 50px;
+  text-align: center; }
 
 .cart-modal .modal {
   padding: 0 !important; }
@@ -29880,21 +29858,62 @@ main {
     top: 0;
     left: 0;
     z-index: 9999; }
-  .header .web-view .header-icon span {
-    font-size: 23px;
-    padding: 1rem .5rem;
-    color: #fff; }
-  .header .web-view .header-content .nav-item .nav-link {
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: .5rem 1.5rem;
-    color: #fff; }
-  .header .web-view .header-content .logo .logo-light {
-    display: block; }
-  .header .web-view .header-content .logo .logo-black {
-    display: none; }
+  .header .web-view {
+    position: relative; }
+    .header .web-view .header-icon span {
+      font-size: 23px;
+      padding: 1rem .5rem;
+      color: #fff; }
+    .header .web-view .header-content .nav-item .nav-link {
+      font-family: "Poppins";
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: .5rem 1.5rem;
+      color: #fff; }
+    .header .web-view .header-content .logo .logo-light {
+      display: block; }
+    .header .web-view .header-content .logo .logo-black {
+      display: none; }
+    .header .web-view .web-search {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      height: 100%;
+      padding: .65rem;
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: transform 0.3s,opacity 0.3s; }
+      .header .web-view .web-search.show {
+        opacity: 1;
+        transform: translateY(0); }
+      .header .web-view .web-search .search-box {
+        border: 1px solid #222;
+        padding: 0.5rem;
+        border-radius: 50px; }
+        .header .web-view .web-search .search-box input {
+          width: 100%;
+          padding: .25rem;
+          border: 0; }
+        .header .web-view .web-search .search-box button {
+          background: transparent;
+          border: 0; }
+      .header .web-view .web-search #close-search {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: -10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 0;
+        background: #222;
+        outline: none; }
+        .header .web-view .web-search #close-search span {
+          font-size: 18px;
+          color: #fff; }
   .header .mobile-view .mobile-search {
     margin-bottom: 15px; }
     .header .mobile-view .mobile-search input {
@@ -30478,7 +30497,8 @@ main {
   overflow: hidden; }
   .product-card .product-img img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .product-card .product-img .product-cart {
     position: absolute;
     bottom: 0;
